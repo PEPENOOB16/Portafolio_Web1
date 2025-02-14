@@ -15,12 +15,14 @@
     <title>Portafolio de Evidencias</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="inicio">
       <nav>
-        <img src="image/logo.png" alt="Logo" id="logo" style="height: 50px; width: 100px;">
+        <a href="https://www.upslp.edu.mx/upslp/">
+          <img src="image/logo.png" alt="Logo" id="logo" style="height: 50px; width: 100px;">
+        </a>
         <ul class="nav__links" id="nav-links">
           <li class="link"><a href="#inicio">Inicio</a></li>
-          <li class="link"><a href="#sobre">Sobre mi</a></li>
+          <li class="link"><a href="#autobiography">Sobre mi</a></li>
           <li class="link"><a href="#mision">Mision</a></li>
           <li class="link"><a href="#consideraciones">Consideraciones</a></li>
           <li class="link"><a href="#contenido">Contenido</a></li>
@@ -40,11 +42,25 @@
         </p>
         <p>Primavera 2024</p>
         
-        <a href="#sobre"><i class="ri-arrow-down-double-line"></i></a>
+        <a href="#autobiography"><i class="ri-arrow-down-double-line"></i></a>
       </div>
     </header>
 
-    <section class="section__container choose__container" id="choose">
+    <div class="parallax">
+      <h1>Alumno: Jose Fernando Arcos Mendez <br> Profesora: MC Imelda Deyanira Hernandez Martinez </h1>
+  </div>
+
+  <div class="autobiography" id="autobiography">
+    <h2 class="section__header">Mi Autobiografía</h2>
+    <p>Nací un 16 de mayo de 2006 en San Luis Potosí, una ciudad que, aunque pequeña en comparación con otras, siempre ha sido un lugar de oportunidades para mí. Desde niño, mi curiosidad por la tecnología me llevó a desarmar todo lo que encontraba a mi paso: controles remotos, relojes y hasta una vieja computadora que mi papá tenía guardada. No siempre lograba armar las cosas de vuelta, pero cada intento era una lección.
+      A los 15 años, decidí que era hora de construir mi primera computadora desde cero. Pasé meses investigando, viendo videos, leyendo foros y comparando componentes hasta que, con el apoyo de mis ahorros y un poco de ayuda, logré ensamblarla. Ese momento fue clave en mi vida, porque no solo me di cuenta de cuánto disfrutaba trabajar con hardware, sino que también descubrí el mundo de la programación. ¿De qué sirve una máquina potente sin un buen software que la haga funcionar?
+      Con esa idea en mente, en la preparatoria decidí estudiar programación. Fue ahí donde tuve mi primer acercamiento formal al código, aprendiendo a escribir mis primeros programas en lenguajes como C++ y Java. Me encantaba la sensación de escribir líneas de código y ver cómo cobraban vida en la pantalla. A pesar de los retos, cada error y cada bug me enseñaron a pensar de manera lógica y a no rendirme fácilmente.
+      Esta pasión me llevó a elegir la carrera de Ingeniería en Tecnologías de la Información en la Universidad Politécnica de San Luis Potosí (UPSLP). Desde que comencé mis estudios, me he enfocado en aprender a programar, entender redes y mejorar mis habilidades en ensamblaje y optimización de equipos. Me fascina la idea de crear soluciones tecnológicas desde cero, combinando hardware y software para hacer sistemas eficientes y funcionales.
+      Fuera de la universidad, disfruto participar en proyectos y experimentos personales, como modificar computadoras viejas para darles una nueva vida o probar nuevos lenguajes de programación. También me gusta jugar videojuegos, especialmente aquellos que requieren estrategia y pensamiento lógico, porque siento que me ayudan a mejorar mis habilidades analíticas.
+      Mi meta es seguir aprendiendo y especializarme en desarrollo de software y sistemas computacionales, tal vez incluso emprender algún negocio relacionado con tecnología en el futuro. Sé que el camino es largo, pero cada línea de código que escribo y cada equipo que armo me acerca un poco más a mi objetivo.</p>
+</div>
+
+    <section class="section__container choose__container" id="mision">
       <img class="choose__bg" src="image/dot-bg.png" alt="bg" />
       <div class="choose__content">
         <h2 class="section__header">Mision de la Carrera</h2>
@@ -67,7 +83,7 @@
       </div>
     </section>
 
-    <section class="section__container modern__container" id="modern">
+    <section class="section__container modern__container" id="consideraciones">
       <div class="modern__image">
         <img src="image/dot-bg.png" alt="bg" class="modern__bg" />
         <img src="image/img1.jpg" alt="modern" class="modern__img-1" />
@@ -95,8 +111,8 @@
       </div>
     </section>
 
-    <section class="section__container testimonial__container" id="testimonial">
-      <h2 class="section__header">Contenido de la Materia</h2>
+    <section class="section__container testimonial__container" id="testimonial" style="background-color: #f4f4f4;">
+      <h2 class="section__header">Consideraciones Sobre las Sesiones</h2>
       <div class="swiper">
 
         <div class="swiper-wrapper">
@@ -143,7 +159,86 @@
       </div>
     </section>
 
-   
+    <section class="section_faq" id="contenido">
+      <div class="faq-container">
+        <h2 class="section__header" style="text-align: center;">Contenido de la Materia</h2>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>Parcial 1</span>
+                <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> 
+                  <path d="M6 9l6 6 6-6"></path>
+              </svg>
+            </div>
+            <div class="faq-answer">
+              <p>1. Practica 1</p>
+              <p>2. Practica 3</p>
+              <p>3. Practica 3</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>Parcial 2</span>
+                <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> 
+                  <path d="M6 9l6 6 6-6"></path>
+              </svg>
+            </div>
+            <div class="faq-answer">
+              <p>1. Practica 1</p>
+              <p>2. Practica 3</p>
+              <p>3. Practica 3</p>            
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>Parcial 3</span>
+                <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> 
+                  <path d="M6 9l6 6 6-6"></path>
+              </svg>
+            </div>
+            <div class="faq-answer">
+              <p>1. Practica 1</p>
+              <p>2. Practica 3</p>
+              <p>3. Practica 3</p>            
+            </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+              <span>Proyecto Final</span>
+              <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> 
+                <path d="M6 9l6 6 6-6"></path>
+            </svg>
+          </div>
+          <div class="faq-answer">
+            <p>Proyecto</p>          
+          </div>
+      </div>
+    </div>
+
+    </section>
+
+    <footer>
+      <div class="footerContainer">
+          <h1 style="text-align: center; color: white;">Portafolio</h1>
+          <div class="footerNav">
+              <ul><li><a href="#inicio">Inicio</a></li>
+                  <li><a href="#autobiography">Sobre mi</a></li>
+                  <li><a href="#mision">Mision</a></li>
+                  <li><a href="#consideraciones">Consideraciones</a></li>
+                  <li><a href="#contenido">Contenido</a></li>
+              </ul>
+          </div>
+          
+      </div>
+      <div class="footerBottom">
+          <p>Copyright &copy;2025; Designed by <span class="designer">Jose Fernando Arcos Mendez</span></p>
+      </div>
+  </footer>
+
+
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>

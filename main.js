@@ -2,6 +2,7 @@ const menuBtn = document.getElementById("menu-btn");
 const navLinks = document.getElementById("nav-links");
 const menuBtnIcon = menuBtn.querySelector("i");
 
+
 menuBtn.addEventListener("click", (e) => {
   navLinks.classList.toggle("open");
 
@@ -69,5 +70,11 @@ document.addEventListener("DOMContentLoaded", function () {
       clickable: true, // Permite hacer clic en los puntos de paginación
     },
     speed: 1000, // Velocidad de la transición entre slides (1s)
+  });
+});
+
+document.querySelectorAll(".faq-item").forEach(item => {
+  item.addEventListener("click", () => {
+      item.classList.toggle("active");
   });
 });
