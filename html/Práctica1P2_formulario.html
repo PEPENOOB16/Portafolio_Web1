@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formulario 1: Volkswagen</title>
+	<link rel="icon" type="image/png" href="Imágenes/poli.png">
+	<style>
+		body {
+			background-color: skyblue;
+			text-align: center;
+		}
+		section {
+			text-align: center;
+		}
+		form {
+			display: inline-block;
+            justify-content: center;
+			text-align: left;
+		}
+		fieldset {
+			border: 1px solid black;
+			margin: 10px;
+			padding: 10px;
+		}
+		legend {
+			font-weight: bold;
+		}
+		label {
+			display: inline-block;
+			width: 150px;
+			text-align: left;
+		}
+		input, select {
+			margin-bottom: 5px;
+			background-color: white;
+            margin-left: -9px;
+		}
+		.fila {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 5px;
+		}
+		.fila div {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			width: 32%;
+		}
+		select {
+			height: 80px;
+			width: 100%;
+		}
+
+		nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+  background: #1b9bff;
+  transition: .5s;
+}
+
+.checkbtn {
+  font-size: 22px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 1050px) {
+  label.logo {
+    padding-left: 30px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+/* Responsive media query code for small screen */
+@media (max-width: 890px) {
+  .checkbtn {
+    display: block;
+  }
+
+  label.logo {
+    font-size: 22px;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  a:hover,
+  a.active {
+    background: none;
+    color: #0082e6;
+  }
+
+  #check:checked~ul {
+    left: 0;
+  }
+}
+	</style>
+</head>
+<body>
+	<nav>
+        
+        <ul>
+            <li><a class="active" href="../index.html">Home</a></li>
+        </ul>
+    </nav>
+	<section>
+		<h1>Volkswagen Potosina</h1>
+		<h2>Compras Online</h2>
+	</section>
+	<form>
+		<fieldset>
+			<legend>Información general del cliente</legend>
+			<label for="nom">Nombre(s):</label>
+			<input type="text" name="nom" id="nom" placeholder="Nombre" required>
+			<label for="apep">Apellido paterno:</label>
+			<input type="text" name="apep" id="apep" placeholder="A. Paterno" required>
+			<label for="apem">Apellido materno:</label>
+			<input type="text" name="apem" id="apem" placeholder="A. Materno" required>
+			<br>
+			<label for="user">Nombre de usuario:</label>
+			<input type="text" name="user" id="user" placeholder="Username" required>
+			<label for="pass">Contraseña:</label>
+			<input type="password" name="pass" id="pass" placeholder="Password" required>
+			<label for="fechanac">Fecha de registro:</label>
+			<input type="date" name="fechanac" id="fechanac" required>
+		</fieldset>
+		<fieldset>
+			<legend>Datos para facturar</legend>
+			<div class="fila">
+				<div>
+					<label for="País">País:</label>
+					<select name="País" id="País" size="3" style="width: 150px; height: 50px;">
+						<option selected>México</option>
+						<option>Canadá</option>
+						<option>Reino Unido</option>
+						<option>Alemania</option>
+						<option>Estados Unidos</option>
+						<option>Brasil</option>
+					</select>
+				</div>
+				<div>
+					<label for="Ciudad">Ciudad:</label>
+					<select name="Ciudad" id="Ciudad" size="3" style="width: 150px; height: 50px;">
+						<option selected>San Luís Potosí</option>
+						<option>Matehuala</option>
+						<option>Ciudad Valles</option>
+						<option>Rio Verde</option>
+						<option>Ciudad Fernández</option>
+					</select>
+				</div>
+				<div>
+					<label for="Calle">Calle:</label>
+					<input type="text" name="Calle" id="Calle" placeholder="Calle" required>
+				</div>
+			</div>
+			<label for="numero">Número de casa:</label>
+			<input type="text" name="numero" id="numero" placeholder="Número exterior" required>
+			<label for="Colonia">Colonia:</label>
+			<input type="text" name="Colonia" id="Colonia" placeholder="Colonia" required>
+			<label for="mail">E-mail:</label>
+			<input type="email" name="mail" id="mail" placeholder="E-mail" required><br>
+			<label for="rfc">R.F.C.:</label>
+			<input type="text" name="rfc" id="rfc" placeholder="R.F.C." required>
+			<label for="cp">C.P.:</label>
+			<input type="text" name="cp" id="cp" placeholder="C.P." required>
+			<br>
+			<input type="checkbox" name="tyc" id="tyc" required>
+			<label for="tyc">Acepto Términos y Condiciones</label>
+			<br>
+			<input type="submit" name="enviar" id="enviar" value="Enviar datos">
+			<input type="reset" name="reestablecer" id="reestablecer" value="Reestablecer">
+		</fieldset>
+	</form>
+	<h3 style="text-align: right;">Febrero 2025, S.L.P.</h3>
+</body>
+</html>
+
