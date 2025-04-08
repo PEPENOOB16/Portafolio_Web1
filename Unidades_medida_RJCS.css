@@ -1,0 +1,55 @@
+body 
+{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 
+{
+    margin-top: 20px;
+    font-size: 2rem;
+}
+
+/* Caja con unidades absolutas */
+.absoluta 
+{
+    width: 200px; /* Unidad absoluta: píxeles */
+    height: 100px;
+    background-color: lightblue;
+    margin: 20px auto;
+    line-height: 100px;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    border: 2px solid darkblue;
+}
+
+/* Caja con unidades relativas (em) */
+.relativa
+{
+    width: 20em; /* Unidad relativa: em */
+    height: 10em;
+    background-color: lightgreen;
+    margin: 20px auto;
+    line-height: 10em;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    border: 2px solid darkgreen;
+}
+
+/* Caja con unidades de viewport (vw y vh) */
+.viewport
+{
+    width: 50vw; /* 50% del ancho de la ventana */
+    height: 20vh; /* 20% de la altura de la ventana */
+    background-color: coral;
+    margin: 20px auto;
+    line-height: 20vh;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    border: 2px solid darkred;
+}
