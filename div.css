@@ -1,0 +1,51 @@
+.contenedor{
+    position: relative;
+    top: 75px;
+    background: grey;
+    z-index: 2;
+}
+
+.capa1{
+    position: relative;
+    height: 50px;
+    top: 25px;
+    left: 50px;
+    background: plum;
+}
+
+.capa2{
+    position: absolute;
+    background: orange;
+    right: 50px;
+    z-index: 2;
+    height: 100px;
+    width: 150px;
+}
+
+.capa3{
+    position: absolute;
+    background: greenyellow;
+    width: 150px;
+    height: 150px;
+    z-index: 1;
+}
+
+.capa4{
+    position: absolute;
+    background: blue;
+    width: 150px;
+    height: 200px;
+    top: 100px;
+    left: 50px;
+    z-index: 3;
+}
+
+.capa5{
+    border: 2px solid palegreen;
+    width: 200px;
+    height: 50px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    z-index: 4;
+}
