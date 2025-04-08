@@ -1,0 +1,49 @@
+body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 8px;
+    padding: 20px;
+}
+
+img {
+    border-radius: 5%;
+    width: 100%;
+    height: auto;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: white;
+    transition: all 0.3s ease; 
+}
+
+button:hover {
+    background-color: #7d1ee9; 
+    transform: scale(1.1); 
+    border: 2px solid #000000; 
+}
+
+button:hover + .parent {
+    visibility: hidden; 
+}
+
+button:not(:hover) + .parent {
+    visibility: visible;
+}
