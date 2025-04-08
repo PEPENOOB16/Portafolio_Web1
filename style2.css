@@ -1,0 +1,54 @@
+.capa1{
+    margin-left: 25%;
+    padding: 12px;
+    height: 100%;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    background-color: salmon;
+    overflow: auto;
+}
+
+li a{
+    background-color: salmon;
+    display: block;
+    padding:  8px 10px;
+    text-decoration: none;
+    color: black;
+}
+
+li a:hover{
+    background-color: rgb(248, 185, 178);
+}
+
+li a.activo{
+    background-color: rgb(248, 185, 178);
+}
+
+li a:hover:not(.activo){
+    background-color: rgb(248, 185, 178);
+}
+
+h1{
+    font-family: "Emblema One", "Titillium Web", system-ui;
+}
+
+h2{
+    font-family: "Teko", sans-serif;
+}
+
+p{
+    text-align: justify;
+    font-family: "parrafos";
+}
+
+@font-face{
+    font-family: "parrafos";
+    src: url("M_PLUS_Rounded_1c/MPLUSRounded1c-Regular.ttf") format("truetype");
+}

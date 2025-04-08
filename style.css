@@ -1,0 +1,27 @@
+ul{
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    width: 20%;
+}
+
+li a{
+    background-color: salmon;
+    display: block;
+    padding:  8px 10px;
+    text-decoration: none;
+    color: black;
+}
+
+
+li a:hover{
+    background-color: rgb(248, 185, 178);
+}
+
+li a.activo{
+    background-color: rgb(248, 185, 178);
+}
+
+li a:hover:not(.activo){
+    background-color: rgb(248, 185, 178);
+}
