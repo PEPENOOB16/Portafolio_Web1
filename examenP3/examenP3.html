@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Propina</title>
+    <link rel="stylesheet" href="examenP3.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Propina</h1>
+        <div class="form-group">
+            <label for="subtotal">Subtotal:</label>
+            <input type="number" id="subtotal" placeholder="Ingresa el subtotal" required>
+        </div>
+
+        <div class="form-group">
+            <label for="porcentaje">Porcentaje de Propina:</label>
+            <input type="text" id="porcentaje" list="porcentajes" placeholder="Selecciona o escribe un porcentaje" required>
+            <datalist id="porcentajes">
+                <option value="5">
+                <option value="10"></option>
+                <option value="15"></option>
+                <option value="20"></option>
+                <option value="25"></option>
+                <option value="30"></option>
+                <option value="35"></option>
+            </datalist>
+        </div>
+
+        <button onclick="calcularPropina()">Calcular</button>
+
+        <div id="resultado">
+            <p>Propina: <span id="propina"></span></p>
+            <p>Total a pagar: <span id="total"></span></p>
+        </div>
+    </div>
+
+
+
+    <script src="examenP3.js"></script>
+</body>
+</html>
